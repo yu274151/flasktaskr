@@ -1,7 +1,7 @@
 deploy:
   provider: heroku
   api_key:
-    secure: PnYrJQKG/6r3M0WdiqcPorkreTNIR1yEh2qKCZBZBe3axwhY1vYiDuNknRJeiJBnnuxwhtHGlwzwOv59eJ9vJMEL4CT2h1/zXJlCDRLVtRjqT4pj5GJ915nNd9CE6QcYGxRrJJO1oWCL6oZ7z7tiy543iHALq+1ubxS5wtSrkASKFSzZhBaY3CpNRBN1sluQLYY+W12vumDQtu+URbp/wJJ8hdoGEeIoU6lUe7KIYOL1zEvJZ0BB//m0t/JW+bBKGkXw4kq9sKVDGqDJ4Nvkpw6AApt2amFu/EVlGKq/SySpuQ1kjTur8ZiUeuv07qkEHx1mk8dOI+tjvFLLjaS0XLS2TxBQyOiF9aSElsVv9n8g9QmVg/TuVef7z4AAn7XMB+CkfSJ0wphUHGNCv74SFMML7B0lcX+ndjl/voJ+9OuUiT0E0jqLnVxrMGKcSlNfH5nQX6ZG3nW7q7GKLmGMxLCKdYGBAgIbwXZ3DWxSF9FskFmzWmAEA7r/Lx+XlXhE9b7+oC5wo8/AXbCJSr330fqUhbUEyQlC9xmsNVSuaBBS1xPVdc9zGEVnj2Hix/8bvbdKPnsvJ7/apPmfxFVEB4e6jSJranbCm0/0UuY+D2OEyJwgi9AE+eWasCIROGCh9ppl2ur1Szt8wOAOjV4OHB27fO8gnynqet+9ArTnuUY=
+    secure: erRf7J5ooGAz3i6ca2Y/DOPs1xFpnAAPPfhovwmt2TALArU8+TdqC25I2lWddkKN/U+ATvH4J/71ceL0DSXcrhBblYxOsKu+0FbsaSMm4m0Ir2bZA+jmctEWBBAikD/42K6PfWu4qWAYxBgSj57fOHm1hIgpgtoYBK2gvEaBdkxK2aQUnJluRFelmSrYW9SBscZcwzjvXCorKY0L1HK0l80i1vsRXwBJJdSS5E258GobNOQxgln3sS/1HGIdvAIiKavOVexig0ZRtWwhg9zesUSXmGIRgFl7SW+L3dOGFFpGxR/+V7FTAdtfVCvJD7MTfGNLJmGnKkXa3BiaOzaZbSLZ336d/WnU8TjVMkmCz//1JrS3aRPZ+SoN8l0UWNZopzLbGyaWLMBQIQJYjsxUc8sZofh9YZdr1gMNVS5H9ya7ASIWyekieVSgbZ7ycwmiZU9mOXVS6wcikJdA619Ik2KAVm/UW3eidgII2y6iWgObwCGsEVlAnThr2qmWSblySqVGSyr3XYDoxDkKCnFXYRjEAXGXHCMtMyAcoVDhbTMaiUc/+dO4RdOi9RsV1dqUbuhSlG4kaeNwMOR6R8BnxZ5Wb3mA3h1nQQ8cV6jomuJc3Ws8PunoYkk31LIEqyWQSVtzI6IWFap8FpSPltEprC+eoY17TKqEZLGe8XY6urg=
   app: pacific-oasis-17750
   on:
     repo: yu274151/flasktaskr
@@ -17,5 +17,7 @@ script:
 travis:
 - setup
 after_install:
-- git checkout -- project/test.db
-- git commit -am "fixing head"
+- git add .
+- git checkout
+- git commit -am "final"
+- git
