@@ -1,0 +1,18 @@
+install:
+- pip install -r requirements.txt
+language:
+- python
+python:
+- '3.6'
+- '2.7'
+script:
+- nosetests
+travis:
+- setup
+deploy:
+  provider: heroku
+  api_key:
+    secure: yluK0LjjJiB83WI9J2CIB/Ajd9oXUjk9u4Wis2S27UJYmbFmD6tQdXsj97ttMHoc74WFPY9W2ZsQ/dszMFPo2GgPBmulINhwaPZmJJ7MUsjY821WZsdQW53xcpaeq6K2D04VbuZpMvQNxDklT7Rkp+Wdi17qxtBkmDdnbZ7NjQIlfeskinGnzBhI7Q/znX4jTlI6OQmgzHami+QzV8A6xDOtWP5vbQFGivSMsAIKyS5NucE+BiKLk6trU91bz5I33ulxzFDk1RD6vkoS0USWlQWPVl3O7BWr6rju/qtE4Y+TESNGd7lwzpD76Q4FL6i5oQDaZtYaTx6CZbSU8qjHdMTcygI+voxo7W4EeDDpqyTD/WhtSoYLgu8FJTxJjrjrEGsS/J7nAhBicexZjK6A9l8GTlfZAV3tqrspLaNLj9+Y/CgEFlDHq2MO3KtLObT4kluIQYSvR3KEbUqCWIp+No17ueerM/I/kMCCywDhXCz1rHLhQjJ9CMzJC3kHhy+I1DksvbM6OEUHo7SwNZU7FKDXBEgEigUj2yGCuqTWOvChp2oYOE3tA2Llellz8u9aiLNh3ZdEBGFwy9EQfLXNwYu3nkGq6yxC1FUlWT1lN2nyiKQBmnThVJbz0oJVmWTQFLCuepxCWCzb9kVXX6qzsvv7AbkYPFKDdyS0MNtMl9E=
+  app: flasktaskr
+  on:
+    repo: yu274151/flasktaskr
