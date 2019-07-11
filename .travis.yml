@@ -1,21 +1,18 @@
---- 
-deploy: 
-  api_key: 
-    secure: GRYsSYUK3cuFUpjDeEcMwwCYWUztYpoEzAQt6mDsXswymCQT4RtDsE2nfrU2yGvBUYqx2ZtXum9CgalmxQeU5BNQIJRh8ACERrCz2JR9YOq4akEE+XoFNKevUAF92K3qvuarFgVc5t832KmR0NIaecRE/EnjAGd/+aFlJtYWUQvi0GLyI13lGP3lNdzudz0YGFxsT2oBD403wVbP1NIHrplYw4jf/5/osIaqz3fLK4ZCBazvIzD5QR0CIJWl+1rMrcA+2K3jRe3pid9HKf95TpI5yYMakInbM95v2CvRlWJmeOeKAGwYrXfrF4Hys16Onmqh+t7f1VkYKWTnrH+3CCpi/Qw8tbobtTJN8p+kqG70w6CSIjcf3qM5k/tgRf2TbQOQLmfVMUtpacZ9xrSp4fgtgrJasoLQ72hr3C492Zpo7uv7W/nPQiG7l4gS5A8taJKiUoAMiIcI6VY1AWzx10mz2MAP51C7zYeN8oW62476ue44tt/KT00ubB5A7lpvkTAyXnc0E/klHjxuoDdoQAPQ4K4CjSjrZeBXwJ0Zn9R9wTR3ojf+K2C8g6k4KQ9PdJIwOz0C1M/QOgj6TqUPB23+wV0aztMlHzAk8+9wGoYmvb1PEvV/kNKQ3+9tSLvOZd4iCVlNzfkB/A4wyJ47xLclJLeIumephsekORR10ZM=
-  app: pacific-oasis-17750
+deploy:
   provider: heroku
-  skip_cleanup: true
-  true: 
+  api_key:
+    secure: xNGxqFJ3u9wUu6F3DlxMG5oIU12bMGEbTmrH9CQK59YCwmhtcdK1YnpTGMFIL8q07jtc1yWgaXEDGU6NBg28QztIHy+qdnAjWwEGcczrZAuF3vJ7kks8AqbsK1F6w8FpWtjy8tz2R+PjXUB3uMgbO5rrCdEETEx5I0H3PMzDlYYCpDW4C5OCIG2MKtmkAlDCwVmF7bnyvOs65TAyovcYZkBDk87CSuQ4fsbYfgFH6JaVajMt7L/19/5VQm53DfBmOKu4MxE7PAoXY9p8G30hkVd9ZMtZR4jD4vivz5hYESY/DvFBdgOKT6cN9nOQjPyf8wqSigxgWNnxDhOogJfj9UEahoQRRjZ0RD+DHti54O7c3doW3qMLXVvtCGgHJqeklty4OajNOxIVOIBZEecEqTA7jGXmcRYEWOg9TSnE/gSkacK4NZvYnh4JL8vKmtfRzmX+d6mN9jubemwYMOombvX/O5jWQvNVQfixvOjOfutyxmOl/ojcbQOhS1J9T6+Vfn7dd44s23WCm2i7P5JtzZCwfaJh3enKskRws9UZ+Ai2UBmn6BDbyNgknIcr8vjS6ctIY85ySO/+GO4D3rYVxt/KllyRcthPGQQXhHU0od4uVvk01tjUbJRUiGlUlroZD/d3BG7IIN5rjYuCw8Vlm7M6AvBTOV1H0APyb7IMyzE=
+  app: pacific-oasis-17750
+  on:
     repo: yu274151/flasktaskr
-install: 
-  - "pip install -r requirements.txt"
-language: 
-  - python
-python: 
-  - "3.6"
-  - "2.7"
-script: 
-  - nosetests
-travis: 
-  - setup
-
+install:
+- pip install -r requirements.txt
+language:
+- python
+python:
+- '3.6'
+- '2.7'
+script:
+- nosetests
+travis:
+- setup
