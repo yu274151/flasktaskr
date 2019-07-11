@@ -11,7 +11,8 @@ travis:
 - setup
 deploy:
   provider: heroku
-  api_key: 6c49fc45-4203-4da8-8178-8b05559ce800
+  api_key:
+    secure: uxf8VMgG5QFPPEcEHyJ+uanL1GrG/sFWwaqkeRxQsDeY1jCgqCe6skj7sboUhr/4bwh9Nv8e7rFb6Wa4RCQRlUE8X5dhcPbt5nww1Q0W+IZM1WSwg+2TQ5x0ShSpKxXQh5wg+cfvtaMnLgd7oSupm1uW4MCJ1gT8+HE5yBEIaQNwHqng1tjLqC6fu5hg97J0WUh1pJMPjF5q6e0Haj8Y61fg9d7gq7nECTF4snox/kqfh0sBFSL7V2u4HdAlKObYPmOSlQvifVbuTSj8NtRWhWSHDh6212gVU4+kEKegpUb5SQXGsTOQnXj/aT8cmPuJaeCo9xRiQywFHd7esLbIqn4cdjBFlta0P6EZay0HK3UfN7L1xKm9uAECUpANmca7arz/BLyJQqSh7jqNwelSaPsCz7xDYhJMYxWb0WmJi5/XNgVOd2WmIWRfjJnAvKLrN8GXJI+9S3r9MZoB+wgKCr1t7y8Drc393kmeuEul6iAfRtdRnHLWxmH0j0F9zjN9H+ZT8EI95B7wQkmaK1edLfOZNWzcpCiQOU09zzUqz5bhO7/u/N7nK2XO+nQnHMBF3SZfMihVeQwvKyCGVmaVYnca6y2SSNYU23kaFlT/MnsoYPaZ9q/T/AZiUsTMmIzibeIdvG7oFE/COk2tN9m2xOU+QBUiLDyVw3b3t+74rMY=
   app: 'yes'
   on:
     repo: yu274151/flasktaskr
