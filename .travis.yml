@@ -16,3 +16,5 @@ script:
 - nosetests
 travis:
 - setup
+before_install:
+- git checkout --file project/test.db
