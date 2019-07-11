@@ -11,8 +11,7 @@ travis:
 - setup
 deploy:
   provider: heroku
-  api_key:
-    secure: EyyklqspZVIene03lPFPxxuQaIH6YeS4woFWg00UPDEp13rDo6GOnEFKayEj+TTGOM7g+TaRAt73ViK2nVUGWXJAhkwlPT/gewrxSbaJAMjCTE5xxlflwy40xDyfaeQDfGQX4VvJjcDKicvtvFptB4CyFQyFS+52peGCm/gGNv7OXq90dsOBLQWyTqxRHtnSzAenlkxmoTh8LZFN3O9iskqhGtxvsQbywVKXYFNAGA6RCDxkj6f5V3PzTosmivd4lU85iN1mWQvjtyd4L1kcYT3aLVw4i1FtiXE2RiCIH64nCY8MJZxEy8n0a5JielHc11M6lpAIOKxvCPpw4310KetCBDmoM7fVNwF8xXQLJDf9CYocV7puh+9/pezOmYDwjTiTgkwA7cZemEVZTOE9RHcdSJ0yJUAa0AmJvLeGp0rgsm/mlGQrNs/5TZ8ZI4X9OUGbskjRNrMYHy+oVC+8JVGwsxeDNvn1b6fJT6wfBB+dUJi3AZHHN1y6CBL2mdjN57iVCb3bQYrXqUHBWoFjUvbL5m1RroJkapQb5EirllLP8nFSEzl/X56FXHXodz7Kw/iGv1vKwXcSz+F/F9K4d9oBMRPTRe12cE8i/S6c6vOCm9W+9ztoFQiLYMpvPrmZHa/TXENG5zbV81VkwbMifp7JnCdnIuWXczASzHUEiSA=
-  app: 'Message: You do not have access to the app flasktaskr.flakTaskr'
+  api_key: 6c49fc45-4203-4da8-8178-8b05559ce800
+  app: 'yes'
   on:
     repo: yu274151/flasktaskr
