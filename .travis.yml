@@ -1,18 +1,21 @@
-install:
-- pip install -r requirements.txt
-language:
-- python
-python:
-- '3.6'
-- '2.7'
-script:
-- nosetests
-travis:
-- setup
-deploy:
-  provider: heroku
-  api_key:
+--- 
+deploy: 
+  api_key: 
     secure: GRYsSYUK3cuFUpjDeEcMwwCYWUztYpoEzAQt6mDsXswymCQT4RtDsE2nfrU2yGvBUYqx2ZtXum9CgalmxQeU5BNQIJRh8ACERrCz2JR9YOq4akEE+XoFNKevUAF92K3qvuarFgVc5t832KmR0NIaecRE/EnjAGd/+aFlJtYWUQvi0GLyI13lGP3lNdzudz0YGFxsT2oBD403wVbP1NIHrplYw4jf/5/osIaqz3fLK4ZCBazvIzD5QR0CIJWl+1rMrcA+2K3jRe3pid9HKf95TpI5yYMakInbM95v2CvRlWJmeOeKAGwYrXfrF4Hys16Onmqh+t7f1VkYKWTnrH+3CCpi/Qw8tbobtTJN8p+kqG70w6CSIjcf3qM5k/tgRf2TbQOQLmfVMUtpacZ9xrSp4fgtgrJasoLQ72hr3C492Zpo7uv7W/nPQiG7l4gS5A8taJKiUoAMiIcI6VY1AWzx10mz2MAP51C7zYeN8oW62476ue44tt/KT00ubB5A7lpvkTAyXnc0E/klHjxuoDdoQAPQ4K4CjSjrZeBXwJ0Zn9R9wTR3ojf+K2C8g6k4KQ9PdJIwOz0C1M/QOgj6TqUPB23+wV0aztMlHzAk8+9wGoYmvb1PEvV/kNKQ3+9tSLvOZd4iCVlNzfkB/A4wyJ47xLclJLeIumephsekORR10ZM=
   app: pacific-oasis-17750
-  on:
+  provider: heroku
+  skip_cleanup: true
+  true: 
     repo: yu274151/flasktaskr
+install: 
+  - "pip install -r requirements.txt"
+language: 
+  - python
+python: 
+  - "3.6"
+  - "2.7"
+script: 
+  - nosetests
+travis: 
+  - setup
+
